@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CA609BA1378E33C0096AEC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA609B91378E33C0096AEC7 /* UIKit.framework */; };
+		6CA609BC1378E33C0096AEC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA609BB1378E33C0096AEC7 /* Foundation.framework */; };
+		6CA609BE1378E33C0096AEC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA609BD1378E33C0096AEC7 /* CoreGraphics.framework */; };
+		6CA609C41378E33C0096AEC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CA609C21378E33C0096AEC7 /* InfoPlist.strings */; };
+		6CA609C71378E33C0096AEC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA609C61378E33C0096AEC7 /* main.m */; };
+		6CA609CA1378E33C0096AEC7 /* MabinogiToolKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA609C91378E33C0096AEC7 /* MabinogiToolKitAppDelegate.m */; };
+		6CA609CD1378E33C0096AEC7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA609CB1378E33C0096AEC7 /* MainWindow.xib */; };
+		6CA609D01378E33C0096AEC7 /* MabinogiToolKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA609CF1378E33C0096AEC7 /* MabinogiToolKitViewController.m */; };
+		6CA609D31378E33C0096AEC7 /* MabinogiToolKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA609D11378E33C0096AEC7 /* MabinogiToolKitViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CA609B51378E33C0096AEC7 /* MabinogiToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MabinogiToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA609B91378E33C0096AEC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6CA609BB1378E33C0096AEC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6CA609BD1378E33C0096AEC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6CA609C11378E33C0096AEC7 /* MabinogiToolKit-Info.plist */ = {isa = PBXFileReference; path = "MabinogiToolKit-Info.plist"; sourceTree = "<group>"; };
+		6CA609C31378E33C0096AEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CA609C51378E33C0096AEC7 /* MabinogiToolKit-Prefix.pch */ = {isa = PBXFileReference; path = "MabinogiToolKit-Prefix.pch"; sourceTree = "<group>"; };
+		6CA609C61378E33C0096AEC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CA609C81378E33C0096AEC7 /* MabinogiToolKitAppDelegate.h */ = {isa = PBXFileReference; path = MabinogiToolKitAppDelegate.h; sourceTree = "<group>"; };
+		6CA609C91378E33C0096AEC7 /* MabinogiToolKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MabinogiToolKitAppDelegate.m; sourceTree = "<group>"; };
+		6CA609CC1378E33C0096AEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		6CA609CE1378E33C0096AEC7 /* MabinogiToolKitViewController.h */ = {isa = PBXFileReference; path = MabinogiToolKitViewController.h; sourceTree = "<group>"; };
+		6CA609CF1378E33C0096AEC7 /* MabinogiToolKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MabinogiToolKitViewController.m; sourceTree = "<group>"; };
+		6CA609D21378E33C0096AEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MabinogiToolKitViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CA609B21378E33C0096AEC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA609BA1378E33C0096AEC7 /* UIKit.framework in Frameworks */,
+				6CA609BC1378E33C0096AEC7 /* Foundation.framework in Frameworks */,
+				6CA609BE1378E33C0096AEC7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA609AA1378E33C0096AEC7 = {
+			isa = PBXGroup;
+			children = (
+				6CA609BF1378E33C0096AEC7 /* MabinogiToolKit */,
+				6CA609B81378E33C0096AEC7 /* Frameworks */,
+				6CA609B61378E33C0096AEC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CA609B61378E33C0096AEC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA609B51378E33C0096AEC7 /* MabinogiToolKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA609B81378E33C0096AEC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CA609B91378E33C0096AEC7 /* UIKit.framework */,
+				6CA609BB1378E33C0096AEC7 /* Foundation.framework */,
+				6CA609BD1378E33C0096AEC7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CA609BF1378E33C0096AEC7 /* MabinogiToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				6CA609C81378E33C0096AEC7 /* MabinogiToolKitAppDelegate.h */,
+				6CA609C91378E33C0096AEC7 /* MabinogiToolKitAppDelegate.m */,
+				6CA609CB1378E33C0096AEC7 /* MainWindow.xib */,
+				6CA609CE1378E33C0096AEC7 /* MabinogiToolKitViewController.h */,
+				6CA609CF1378E33C0096AEC7 /* MabinogiToolKitViewController.m */,
+				6CA609D11378E33C0096AEC7 /* MabinogiToolKitViewController.xib */,
+				6CA609C01378E33C0096AEC7 /* Supporting Files */,
+			);
+			path = MabinogiToolKit;
+			sourceTree = "<group>";
+		};
+		6CA609C01378E33C0096AEC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA609C11378E33C0096AEC7 /* MabinogiToolKit-Info.plist */,
+				6CA609C21378E33C0096AEC7 /* InfoPlist.strings */,
+				6CA609C51378E33C0096AEC7 /* MabinogiToolKit-Prefix.pch */,
+				6CA609C61378E33C0096AEC7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CA609B41378E33C0096AEC7 /* MabinogiToolKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA609D61378E33C0096AEC7 /* Build configuration list for PBXNativeTarget "MabinogiToolKit" */;
+			buildPhases = (
+				6CA609B11378E33C0096AEC7 /* Sources */,
+				6CA609B21378E33C0096AEC7 /* Frameworks */,
+				6CA609B31378E33C0096AEC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MabinogiToolKit;
+			productName = MabinogiToolKit;
+			productReference = 6CA609B51378E33C0096AEC7 /* MabinogiToolKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA609AC1378E33C0096AEC7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 6CA609AF1378E33C0096AEC7 /* Build configuration list for PBXProject "MabinogiToolKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6CA609AA1378E33C0096AEC7;
+			productRefGroup = 6CA609B61378E33C0096AEC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CA609B41378E33C0096AEC7 /* MabinogiToolKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CA609B31378E33C0096AEC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA609C41378E33C0096AEC7 /* InfoPlist.strings in Resources */,
+				6CA609CD1378E33C0096AEC7 /* MainWindow.xib in Resources */,
+				6CA609D31378E33C0096AEC7 /* MabinogiToolKitViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CA609B11378E33C0096AEC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA609C71378E33C0096AEC7 /* main.m in Sources */,
+				6CA609CA1378E33C0096AEC7 /* MabinogiToolKitAppDelegate.m in Sources */,
+				6CA609D01378E33C0096AEC7 /* MabinogiToolKitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CA609C21378E33C0096AEC7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA609C31378E33C0096AEC7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CA609CB1378E33C0096AEC7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA609CC1378E33C0096AEC7 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		6CA609D11378E33C0096AEC7 /* MabinogiToolKitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA609D21378E33C0096AEC7 /* en */,
+			);
+			name = MabinogiToolKitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CA609D41378E33C0096AEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6CA609D51378E33C0096AEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		6CA609D71378E33C0096AEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MabinogiToolKit/MabinogiToolKit-Prefix.pch";
+				INFOPLIST_FILE = "MabinogiToolKit/MabinogiToolKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6CA609D81378E33C0096AEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MabinogiToolKit/MabinogiToolKit-Prefix.pch";
+				INFOPLIST_FILE = "MabinogiToolKit/MabinogiToolKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CA609AF1378E33C0096AEC7 /* Build configuration list for PBXProject "MabinogiToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA609D41378E33C0096AEC7 /* Debug */,
+				6CA609D51378E33C0096AEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA609D61378E33C0096AEC7 /* Build configuration list for PBXNativeTarget "MabinogiToolKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA609D71378E33C0096AEC7 /* Debug */,
+				6CA609D81378E33C0096AEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CA609AC1378E33C0096AEC7 /* Project object */;
+}
