@@ -18,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   self.window.rootViewController = self.viewController;
+  [UIApplication sharedApplication].idleTimerDisabled = YES;
   
   [self.window makeKeyAndVisible];
   return YES;
