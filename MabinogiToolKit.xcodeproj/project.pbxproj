@@ -36,6 +36,9 @@
 		6CCF40F6138508BE003973EB /* WeekEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40F0138508BE003973EB /* WeekEffectView.xib */; };
 		6CCF410113850DF2003973EB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40FF13850DF2003973EB /* Icon.png */; };
 		6CCF410213850DF2003973EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF410013850DF2003973EB /* Icon@2x.png */; };
+		6CE3EA7E1389FB99005E63A8 /* Rua.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3EA7D1389FB99005E63A8 /* Rua.m */; };
+		6CE3EA82138A00F2005E63A8 /* RuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3EA80138A00F2005E63A8 /* RuaViewController.m */; };
+		6CE3EA86138A0149005E63A8 /* RuaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3EA84138A0149005E63A8 /* RuaView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,11 @@
 		6CCF40F1138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WeekEffectView.xib; sourceTree = "<group>"; };
 		6CCF40FF13850DF2003973EB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		6CCF410013850DF2003973EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		6CE3EA7C1389FB99005E63A8 /* Rua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rua.h; sourceTree = "<group>"; };
+		6CE3EA7D1389FB99005E63A8 /* Rua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rua.m; sourceTree = "<group>"; };
+		6CE3EA7F138A00F2005E63A8 /* RuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuaViewController.h; sourceTree = "<group>"; };
+		6CE3EA80138A00F2005E63A8 /* RuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuaViewController.m; sourceTree = "<group>"; };
+		6CE3EA85138A0149005E63A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RuaView.xib; sourceTree = "<group>"; };
 		6CED16501385258600D24E5A /* MabinogiToolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MabinogiToolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,6 +184,8 @@
 				6CA609F21378EFFA0096AEC7 /* MoonGateViewController.m */,
 				6C7D59B1138257F80031C6E8 /* PriceViewController.h */,
 				6C7D59B2138257F80031C6E8 /* PriceViewController.m */,
+				6CE3EA7F138A00F2005E63A8 /* RuaViewController.h */,
+				6CE3EA80138A00F2005E63A8 /* RuaViewController.m */,
 				6C1252AE138454EB004DA854 /* CreditViewController.h */,
 				6C1252AF138454EB004DA854 /* CreditViewController.m */,
 			);
@@ -193,6 +203,8 @@
 				6C14F1181380CF6300C98ECC /* MoonGate.m */,
 				6C14F1131380CDD900C98ECC /* Price.h */,
 				6C14F1141380CDD900C98ECC /* Price.m */,
+				6CE3EA7C1389FB99005E63A8 /* Rua.h */,
+				6CE3EA7D1389FB99005E63A8 /* Rua.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -202,11 +214,12 @@
 			children = (
 				6CA609CB1378E33C0096AEC7 /* MainWindow.xib */,
 				6CA609D11378E33C0096AEC7 /* MabinogiToolKitView.xib */,
-				6CCF40E8138508BE003973EB /* CreditView.xib */,
 				6CCF40EA138508BE003973EB /* ErinnTimeView.xib */,
+				6CCF40F0138508BE003973EB /* WeekEffectView.xib */,
 				6CCF40EC138508BE003973EB /* MoonGateView.xib */,
 				6CCF40EE138508BE003973EB /* PriceView.xib */,
-				6CCF40F0138508BE003973EB /* WeekEffectView.xib */,
+				6CE3EA84138A0149005E63A8 /* RuaView.xib */,
+				6CCF40E8138508BE003973EB /* CreditView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -272,6 +285,7 @@
 				6CCF40F6138508BE003973EB /* WeekEffectView.xib in Resources */,
 				6CCF410113850DF2003973EB /* Icon.png in Resources */,
 				6CCF410213850DF2003973EB /* Icon@2x.png in Resources */,
+				6CE3EA86138A0149005E63A8 /* RuaView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +308,8 @@
 				6C14F1191380CF6300C98ECC /* MoonGate.m in Sources */,
 				6C7D59B4138257F80031C6E8 /* PriceViewController.m in Sources */,
 				6C1252B1138454EC004DA854 /* CreditViewController.m in Sources */,
+				6CE3EA7E1389FB99005E63A8 /* Rua.m in Sources */,
+				6CE3EA82138A00F2005E63A8 /* RuaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +378,14 @@
 				6CCF40F1138508BE003973EB /* en */,
 			);
 			name = WeekEffectView.xib;
+			sourceTree = "<group>";
+		};
+		6CE3EA84138A0149005E63A8 /* RuaView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CE3EA85138A0149005E63A8 /* en */,
+			);
+			name = RuaView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -95,12 +95,6 @@
   return 28;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.row == 0 && [MoonGate isGateOpen]) {
-    //cell.backgroundColor = [UIColor colorWithHue:0.60 saturation:0.09 brightness:0.99 alpha:0.4];
-  }
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   NSString *CellIdentifier = @"MyIdentifer";
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];

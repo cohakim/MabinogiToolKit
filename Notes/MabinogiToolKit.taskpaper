@@ -1,14 +1,16 @@
 Issues:
-- 天気予報
-- ボス出現予報
-- 曜日効果の詳細
+- その日のサブイベント
+- Today's ミッション
+- フレッタ @done
+- 天気予報 @done
+- ボス出現予報 @done
 v1.1.0:
-	defact:
-	enhancement:
-		- スリープ回避
 	task:
-		- ルア
-		- フレッタ
+		- ルア @done
+v.1.0.1:
+	enhancement:
+		- スリープ回避 @done
+
 v1.0.0:
 - エリン時計 @done
 - 曜日効果 @done

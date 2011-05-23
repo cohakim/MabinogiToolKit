@@ -4,6 +4,7 @@
 #import "WeekEffectViewController.h"
 #import "MoonGateViewController.h"
 #import "PriceViewController.h"
+#import "RuaViewController.h"
 #import "CreditViewController.h"
 
 @interface MabinogiToolKitViewController : UIViewController <UIScrollViewDelegate> {

@@ -48,18 +48,20 @@
   
   // initialize static view
   ErinnTimeViewController *erinnTimeViewController = 
-  [[[ErinnTimeViewController alloc] initWithNibName:@"ErinnTimeView" bundle:nil] autorelease];
+    [[[ErinnTimeViewController alloc] initWithNibName:@"ErinnTimeView" bundle:nil] autorelease];
   [staticView addSubview:erinnTimeViewController.view];
   
   // initialize scroll view
   WeekEffectViewController *weekEffectViewController = 
-  [[[WeekEffectViewController alloc] initWithNibName:@"WeekEffectView" bundle:nil] autorelease];
+    [[[WeekEffectViewController alloc] initWithNibName:@"WeekEffectView" bundle:nil] autorelease];
   MoonGateViewController *moonGateViewController = 
-  [[[MoonGateViewController alloc] initWithNibName:@"MoonGateView" bundle:nil] autorelease];
+    [[[MoonGateViewController alloc] initWithNibName:@"MoonGateView" bundle:nil] autorelease];
   PriceViewController *priceViewController = 
-  [[[PriceViewController alloc] initWithNibName:@"PriceView" bundle:nil] autorelease];
+    [[[PriceViewController alloc] initWithNibName:@"PriceView" bundle:nil] autorelease];
+  RuaViewController *ruaViewController = 
+    [[[RuaViewController alloc] initWithNibName:@"RuaView" bundle:nil] autorelease];
   CreditViewController *creditViewController = 
-  [[[CreditViewController alloc] initWithNibName:@"CreditView" bundle:nil] autorelease];
+    [[[CreditViewController alloc] initWithNibName:@"CreditView" bundle:nil] autorelease];
   
   [weekEffectViewController.view setFrame:[self rectForPage:0]];
   [scrollView addSubview:weekEffectViewController.view];
@@ -67,7 +69,9 @@
   [scrollView addSubview:moonGateViewController.view];
   [priceViewController.view setFrame:[self rectForPage:2]];
   [scrollView addSubview:priceViewController.view];
-  [creditViewController.view setFrame:[self rectForPage:3]];
+  [ruaViewController.view setFrame:[self rectForPage:3]];
+  [scrollView addSubview:ruaViewController.view];
+  [creditViewController.view setFrame:[self rectForPage:4]];
   [scrollView addSubview:creditViewController.view];
   
   scrollView.contentSize = CGSizeMake(self.baseWidth * self.pageSize, self.baseHeight);

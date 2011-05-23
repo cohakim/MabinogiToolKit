@@ -1,22 +1,30 @@
 
-#import "PriceViewController.h"
+#import "RuaViewController.h"
 
-@interface PriceViewController ()
+@interface RuaViewController ()
 - (void)refreshTimeTable;
 @end
 
-@implementation PriceViewController
+@implementation RuaViewController
 
-@synthesize priceView;
+@synthesize ruaView;
 @synthesize timer;
-@synthesize priceTimeTable;
+@synthesize ruaTimeTable;
 
 #pragma mark -
 #pragma mark Private Methods
 
 - (void)refreshTimeTable {
-  self.priceTimeTable = [Price timeTable:NSMakeRange([Price currentCycleCount], 12)];
-  [priceView reloadData];
+  NSMutableArray *timeTable = [NSMutableArray array];
+  for (int i = 0; [timeTable count] <= 12; i++) {
+    NSDictionary *rua =  [Rua attendanceAtCycleCount:([Rua currentCycleCount] + i)];
+    if ([[rua objectForKey:@"attendance"] boolValue]) {
+      [timeTable addObject:rua];
+    }
+  }
+  self.ruaTimeTable = timeTable;
+  
+  [ruaView reloadData];
 }
 
 #pragma mark -
@@ -31,7 +39,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [priceView setSeparatorColor:[UIColor blackColor]];
+  [ruaView setSeparatorColor:[UIColor blackColor]];
   self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
                                                 target:self
                                               selector:@selector(fireTimerEvent)
@@ -51,7 +59,7 @@
 
 - (void)dealloc {
   self.timer = nil;
-  self.priceTimeTable = nil;
+  self.ruaTimeTable = nil;
   [super dealloc];
 }
 
@@ -74,7 +82,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [priceTimeTable count];
+  return [ruaTimeTable count];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -84,7 +92,7 @@
   [titleLabel setBackgroundColor:[UIColor colorWithHue:0.00 saturation:0.00 brightness:0.00 alpha:0.00]];
   [titleLabel setFont:[UIFont boldSystemFontOfSize:13]];
 	[titleLabel setTextColor:[UIColor whiteColor]];
-	[titleLabel setText:@"プライス"];
+	[titleLabel setText:@"ルア"];
 	[sectionView addSubview:titleLabel];
 	return sectionView;
 }
@@ -108,14 +116,16 @@
     [cell.textLabel setNumberOfLines:1];
     [cell.detailTextLabel setTextColor:[UIColor yellowColor]];  
   }
-  NSDictionary *price = [priceTimeTable objectAtIndex:indexPath.row];
+  NSDictionary *rua = [ruaTimeTable objectAtIndex:indexPath.row];
   NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
   [formatter setDateFormat:@"HH:mm"];
-  
-  [cell.textLabel setText:[price objectForKey:@"placeName"]];
 
   if (indexPath.row == 0) {
-    NSDate *closeTime = [[price objectForKey:@"appearanceTime"] dateByAddingTimeInterval:(60*36)];
+    [cell.textLabel setText:@"出勤時間"];
+  }
+
+  if (indexPath.row == 0 && [Rua isRuaAttendance]) {
+    NSDate *closeTime = [[rua objectForKey:@"appearanceTime"] dateByAddingTimeInterval:(60*18)];
     int restTime = (int)[closeTime timeIntervalSinceNow];
     NSString *mmss = [NSString stringWithFormat:@"%02i:%02i", restTime / 60, restTime % 60];
     [cell.detailTextLabel setText:mmss];
@@ -125,7 +135,7 @@
   else {
     NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
     [formatter setDateFormat:@"HH:mm"];
-    [cell.detailTextLabel setText:[formatter stringFromDate:[price objectForKey:@"appearanceTime"]]];
+    [cell.detailTextLabel setText:[formatter stringFromDate:[rua objectForKey:@"appearanceTime"]]];
     [cell.detailTextLabel setTextColor:[UIColor yellowColor]];
     [cell.textLabel setTextColor:[UIColor whiteColor]];
   }
