@@ -43,7 +43,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // initialize background view
-  UIImage *backgroundImage = [UIImage imageNamed:@"smart_012.png"];
+  UIImage *backgroundImage = [UIImage imageNamed:@"bgimg.jpg"];
   self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
   
   // initialize static view

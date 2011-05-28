@@ -27,7 +27,8 @@
 		6CA609D31378E33C0096AEC7 /* MabinogiToolKitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA609D11378E33C0096AEC7 /* MabinogiToolKitView.xib */; };
 		6CA609EF1378EF0E0096AEC7 /* WeekEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA609ED1378EF0E0096AEC7 /* WeekEffectViewController.m */; };
 		6CA609F41378EFFB0096AEC7 /* MoonGateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA609F21378EFFA0096AEC7 /* MoonGateViewController.m */; };
-		6CBF37611384468300DC7D33 /* smart_012.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CBF37601384468300DC7D33 /* smart_012.png */; };
+		6CADC6A413917A0800B810D7 /* bgimg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC6A213917A0800B810D7 /* bgimg.jpg */; };
+		6CADC6A513917A0800B810D7 /* bgimg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CADC6A313917A0800B810D7 /* bgimg2.png */; };
 		6CBF3764138449E200DC7D33 /* 20100424_30.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6CBF3763138449E200DC7D33 /* 20100424_30.gif */; };
 		6CCF40F2138508BE003973EB /* CreditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40E8138508BE003973EB /* CreditView.xib */; };
 		6CCF40F3138508BE003973EB /* ErinnTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40EA138508BE003973EB /* ErinnTimeView.xib */; };
@@ -75,7 +76,8 @@
 		6CA609ED1378EF0E0096AEC7 /* WeekEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekEffectViewController.m; sourceTree = "<group>"; };
 		6CA609F11378EFFA0096AEC7 /* MoonGateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoonGateViewController.h; sourceTree = "<group>"; };
 		6CA609F21378EFFA0096AEC7 /* MoonGateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoonGateViewController.m; sourceTree = "<group>"; };
-		6CBF37601384468300DC7D33 /* smart_012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smart_012.png; path = Resources/smart_012.png; sourceTree = "<group>"; };
+		6CADC6A213917A0800B810D7 /* bgimg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgimg.jpg; path = Resources/bgimg.jpg; sourceTree = "<group>"; };
+		6CADC6A313917A0800B810D7 /* bgimg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgimg2.png; path = Resources/bgimg2.png; sourceTree = "<group>"; };
 		6CBF3763138449E200DC7D33 /* 20100424_30.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 20100424_30.gif; path = Resources/20100424_30.gif; sourceTree = "<group>"; };
 		6CCF40E9138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CreditView.xib; sourceTree = "<group>"; };
 		6CCF40EB138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ErinnTimeView.xib; sourceTree = "<group>"; };
@@ -159,11 +161,12 @@
 		6CA609E31378E7000096AEC7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6CADC6A213917A0800B810D7 /* bgimg.jpg */,
+				6CADC6A313917A0800B810D7 /* bgimg2.png */,
 				6CCF40FF13850DF2003973EB /* Icon.png */,
 				6CCF410013850DF2003973EB /* Icon@2x.png */,
 				6C1252B413845F6D004DA854 /* mabinya.gif */,
 				6C1252B513845F6D004DA854 /* nexon.gif */,
-				6CBF37601384468300DC7D33 /* smart_012.png */,
 				6CBF3763138449E200DC7D33 /* 20100424_30.gif */,
 			);
 			name = Resources;
@@ -274,7 +277,6 @@
 				6CA609C41378E33C0096AEC7 /* InfoPlist.strings in Resources */,
 				6CA609CD1378E33C0096AEC7 /* MainWindow.xib in Resources */,
 				6CA609D31378E33C0096AEC7 /* MabinogiToolKitView.xib in Resources */,
-				6CBF37611384468300DC7D33 /* smart_012.png in Resources */,
 				6CBF3764138449E200DC7D33 /* 20100424_30.gif in Resources */,
 				6C1252B613845F6D004DA854 /* mabinya.gif in Resources */,
 				6C1252B713845F6D004DA854 /* nexon.gif in Resources */,
@@ -286,6 +288,8 @@
 				6CCF410113850DF2003973EB /* Icon.png in Resources */,
 				6CCF410213850DF2003973EB /* Icon@2x.png in Resources */,
 				6CE3EA86138A0149005E63A8 /* RuaView.xib in Resources */,
+				6CADC6A413917A0800B810D7 /* bgimg.jpg in Resources */,
+				6CADC6A513917A0800B810D7 /* bgimg2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,23 +1,21 @@
-Issues:
-- その日のサブイベント
-- Today's ミッション
-- フレッタ @done
-- 天気予報 @done
-- ボス出現予報 @done
+Defact:
+- ルア出勤時間が終わってもリストから消えない
+Task:
+- アバター待ち受け表示
+Enhancement:
+v1.2.0:
+	task:
+		- Today's ミッション
+		- ドラゴン予報
 v1.1.0:
 	task:
 		- ルア @done
 v.1.0.1:
 	enhancement:
 		- スリープ回避 @done
-
 v1.0.0:
-- エリン時計 @done
 - 曜日効果 @done
 - アドバンスドプレイアイテム @done
 - ムーンゲート @done
 - プライス @done
 - クレジット @done
-	
-
-		
