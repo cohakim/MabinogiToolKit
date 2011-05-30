@@ -49,11 +49,18 @@ const NSInteger kMoomGateGap = 10;
 
 + (NSArray*)gateNames {
   return [NSArray arrayWithObjects:
-          @"ケアン港", @"バンホール", @"イメンマハ", @"タラ", @"ティルコネイル",
-          @"タルティーン", @"ケオ島", @"イメンマハ", @"タラ", @"バンホール",
-          @"ダンバートン", @"ケアン港", @"タラ", @"タルティーン", @"ティルコネイル",
-          @"ダンバートン", @"バンホール", @"タラ", @"ケオ島", @"ティルコネイル",
-          @"タルティーン", @"イメンマハ", @"タラ", @"ダンバートン",
+          NSLocalizedString(@"Port Ceann", nil), NSLocalizedString(@"Bangor", nil),
+          NSLocalizedString(@"Emain Macha", nil), NSLocalizedString(@"Tara", nil), 
+          NSLocalizedString(@"Tir Chonaill", nil), NSLocalizedString(@"Taillteann", nil),
+          NSLocalizedString(@"Ceo Island", nil), NSLocalizedString(@"Emain Macha", nil),
+          NSLocalizedString(@"Tara", nil), NSLocalizedString(@"Bangor", nil),
+          NSLocalizedString(@"Dunbarton", nil), NSLocalizedString(@"Port Ceann", nil),
+          NSLocalizedString(@"Tara", nil), NSLocalizedString(@"Taillteann", nil), 
+          NSLocalizedString(@"Tir Chonaill", nil), NSLocalizedString(@"Dunbarton", nil),
+          NSLocalizedString(@"Bangor", nil), NSLocalizedString(@"Tara", nil), 
+          NSLocalizedString(@"Ceo Island", nil), NSLocalizedString(@"Tir Chonaill", nil),
+          NSLocalizedString(@"Taillteann", nil), NSLocalizedString(@"Emain Macha", nil),
+          NSLocalizedString(@"Tara", nil), NSLocalizedString(@"Dunbarton", nil),
           nil];
 }
 

@@ -96,10 +96,10 @@
 	[titleLabel setTextColor:[UIColor whiteColor]];
   switch (section) {
     case 0:
-      [titleLabel setText:@"曜日効果"];
+      [titleLabel setText:NSLocalizedString(@"Daily Effects", nil)];
       break;
     case 1:
-      [titleLabel setText:@"アドバンスドプレイアイテム"];
+      [titleLabel setText:NSLocalizedString(@"Advanced Play Service", nil)];
       break;
   }
   [sectionView addSubview:titleLabel];

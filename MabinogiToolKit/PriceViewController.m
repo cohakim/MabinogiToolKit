@@ -84,7 +84,7 @@
   [titleLabel setBackgroundColor:[UIColor colorWithHue:0.00 saturation:0.00 brightness:0.00 alpha:0.00]];
   [titleLabel setFont:[UIFont boldSystemFontOfSize:13]];
 	[titleLabel setTextColor:[UIColor whiteColor]];
-	[titleLabel setText:@"プライス"];
+	[titleLabel setText:NSLocalizedString(@"Price", nil)];
 	[sectionView addSubview:titleLabel];
 	return sectionView;
 }

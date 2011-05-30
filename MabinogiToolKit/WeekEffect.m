@@ -84,109 +84,109 @@
 
 + (NSArray*)effectsImbolic {
   return [NSArray arrayWithObjects:
-          @"クリティカルヒットの発生率が高くなります。", 
-          @"ラッキーフィニッシュの発生率が高くなります。",
-          @"演奏成功率が増加します。",
-          @"魔法音楽の成功率が増加します。",
-          @"魔法音楽の発生率が増加します。",
+          NSLocalizedString(@"Increase in critical hit rate.", nil), 
+          NSLocalizedString(@"Increase in lucky finish.", nil),
+          NSLocalizedString(@"Increase in success rate for instrument playing.", nil),
+          NSLocalizedString(@"Increase in success rate for magic music.", nil),
+          NSLocalizedString(@"Increase in taming rate using magic music.", nil),
           nil];
 }
 + (NSArray*)effectsAlbanEiler {
   return [NSArray arrayWithObjects:
-          @"生産スキルの成功率が高くなります。", 
-          @"生活スキルのランクアップボーナスが増加します。",
-          @"生産品の品質が向上します。",
+          NSLocalizedString(@"Increase in success rate for production skills.", nil), 
+          NSLocalizedString(@"Increase in rank up bonus for life skills.", nil),
+          NSLocalizedString(@"Increase in quality of output for productions.", nil),
           nil];
 }
 + (NSArray*)effectsBeltane {
   return [NSArray arrayWithObjects:
-          @"同じアイテムを落とした場合でもダンジョンの形が変わるようになります。", 
-          @"ダンジョンでアイテムが出る確率が高くなります。",
-          @"戦闘スキルのランクアップボーナスが増加します。",
+          NSLocalizedString(@"Dungeon maps change even if the same item is dropped.", nil), 
+          NSLocalizedString(@"Increase in dungeon item drop rate.", nil),
+          NSLocalizedString(@"Increase in rank-up bonus for Combat skills.", nil),
           nil];
 }
 + (NSArray*)effectsAlbanHeruin {
   return [NSArray arrayWithObjects:
-          @"自然や動物からアイテムを入手できる確率が高くなります。", 
-          @"店から物を安く買うことができます。",
-          @"銀行の手数料が安くなります。",
-          @"スキルのパーフェクト・トレーニングボーナスが増加します。",
+          NSLocalizedString(@"Increase in item drop rate from animals and nature.", nil), 
+          NSLocalizedString(@"Decrease in prices for items in NPC shops.", nil),
+          NSLocalizedString(@"Decrease in Bank transaction fees.", nil),
+          NSLocalizedString(@"Increase in rank-up bonus for complete mastery of a skill.", nil),
           nil];
 }
 + (NSArray*)effectsLughnasadh {
   return [NSArray arrayWithObjects:
-          @"エンチャントの成功率が高くなります。", 
-          @"魔法スキルのランクアップボーナスが増加します。",
-          @"装備を使用したときに得る熟練度が増加します。",
+          NSLocalizedString(@"Enchant success rates are increased.", nil), 
+          NSLocalizedString(@"Increase in rank-up bonus for Magic skills.", nil),
+          NSLocalizedString(@"Increase of proficiency gaining rate.", nil),
           nil];
 }
 + (NSArray*)effectsAlbanElved {
   return [NSArray arrayWithObjects:
-          @"行動不能時の経験値ペナルティーが減ります。", 
-          @"ポーションの効果が高くなります。(回復量1.5倍)",
-          @"アルバイトの報酬が高くなります。",
+          NSLocalizedString(@"Decrease in penalties if knocked unconscious. ", nil), 
+          NSLocalizedString(@"All potions become more potent.", nil),
+          NSLocalizedString(@"Increase in rewards for completing part-time jobs.", nil),
           nil];
 }
 + (NSArray*)effectsSamhain {
   return [NSArray arrayWithObjects:
-          @"歳を取ることでAPを獲得します。", 
-          @"食べ物の効果が高くなります。",
-          @"少し動いてしまった動物もスケッチできます。",
-          @"錬金術スキルの成功率が高くなります。",
+          NSLocalizedString(@"As you age and grow, you will obtain AP", nil), 
+          NSLocalizedString(@"Food effects are increased.", nil),
+          NSLocalizedString(@"You will be able to even sketch monsters that move slightly.", nil),
+          NSLocalizedString(@"The L-Rod's effect will increase over time.", nil),
+          NSLocalizedString(@"Increase in success rates for Alchemy skills.", nil),
           nil];
 }
 
 + (NSArray*)itemsImbolic {
   return [NSArray arrayWithObjects:
-          @"染色アンプル",
-          @"金属染色アンプル",
+          NSLocalizedString(@"Dye Ampoule", nil),
+          NSLocalizedString(@"Metal Dye Ampoule", nil),
           nil];
 }
 + (NSArray*)itemsAlbanEiler {
   return [NSArray arrayWithObjects:
-          @"完全回復ポーション",
-          @"生命力のエリクサー",
-          @"マナのエリクサー",
-          @"スタミナのエリクサー",
+          NSLocalizedString(@"Full Recovery Potion", nil),
+          NSLocalizedString(@"HP Elixir", nil),
+          NSLocalizedString(@"MP Elixir", nil),
+          NSLocalizedString(@"Stamina Elixir", nil),
           nil];
 }
 + (NSArray*)itemsBeltane {
   return [NSArray arrayWithObjects:
-          @"パーティー用フェニックスの羽根×2",
-          @"遠隔武器屋利用チケット×2",
-          @"遠隔衣類修理チケット×2",
-          @"有効期間1日延長の鍵×1",
+          NSLocalizedString(@"Party Phoenix Feather ×2", nil),
+          NSLocalizedString(@"Remote Weapon Shop Ticket ×2", nil),
+          NSLocalizedString(@"Remote Tailor Coupon ×2", nil),
+          NSLocalizedString(@"1 Day Expiration Extension Key ×1", nil),
           nil];
 }
 + (NSArray*)itemsAlbanHeruin {
   return [NSArray arrayWithObjects:
-          @"採集速度増加ポーション",
-          @"キャンプキット",
-          @"遠隔鍛冶屋修理チケット×2",
-          @"遠隔錬金術師の家チケット×1",
+          NSLocalizedString(@"High Gathering Speed Potion", nil),
+          NSLocalizedString(@"Camp Kit", nil),
+          NSLocalizedString(@"Remote Blacksmith Coupon ×2", nil),
+          NSLocalizedString(@"Remote Alchemist Coupon ×1", nil),
           nil];
 }
 + (NSArray*)itemsLughnasadh {
   return [NSArray arrayWithObjects:
-          @"キャンプファイアキット×2",
-          @"遠隔官庁利用チケット×2",
-          @"銀行チケット×2 ",
+          NSLocalizedString(@"Campfire Kit ×2", nil),
+          NSLocalizedString(@"Remote Administrative Office Ticket ×2", nil),
+          NSLocalizedString(@"Remote Bank Coupon ×2", nil),
           nil];
 }
 + (NSArray*)itemsAlbanElved {
   return [NSArray arrayWithObjects:
-          @"蜜蝋の翼×2",
-          @"ダンジョン蜜蝋の翼×2",
-          @"友達召喚カプセル×2",
+          NSLocalizedString(@"Waxen Wing of Goddess ×2", nil),
+          NSLocalizedString(@"Dungeon Wax Wings ×2", nil),
+          NSLocalizedString(@"Friend Summons Capsule ×2", nil),
           nil];
 }
 + (NSArray*)itemsSamhain {
   return [NSArray arrayWithObjects:
-          @"スキルアントレインカプセル",
-          @"ヒーラーチケット×2",
-          @"遠隔魔法武器修理チケット×2",
+          NSLocalizedString(@"Skill Reset Capsule", nil),
+          NSLocalizedString(@"Remote Healer Coupon ×2", nil),
+          NSLocalizedString(@"Remote Magic Weapon Blacksmith Coupon ×2", nil),
           nil];
 }
-
 
 @end

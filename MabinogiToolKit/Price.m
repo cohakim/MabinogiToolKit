@@ -40,12 +40,14 @@ const NSInteger kPlaceGap = 5;
 
 + (NSArray*)placeNames {
   return [NSArray arrayWithObjects:
-    @"バンホール 酒場", @"センマイ平原 穴蔵の跡", @"イメンマハ 武器店の裏通り", 
-    @"ケオ島", @"イメンマハ 南方向中間の島", @"センマイ平原三叉路西の廃屋",
-    @"ドラゴン遺跡 東南の家", @"バンホール バリダンジョンそば", @"ダンバートン 学校前",
-    @"トゥガルドアイルキャンプ北側付近", @"ティルコネイル 旅館", @"トゥガルドアイルキャンプ北側付近",
-    @"ダンバートン東 じゃがいも畑の天幕", @"ドラゴン遺跡 東の家", 
-    nil];
+          NSLocalizedString(@"Bangor Bar", nil), NSLocalizedString(@"Sen Mag 5th house from West", nil), 
+          NSLocalizedString(@"Emain Macha - Behind Weapon Shop", nil), NSLocalizedString(@"Ceo Island", nil), 
+          NSLocalizedString(@"Emain Macha - Island in South Pathway", nil), NSLocalizedString(@"Sen Mag 5th house from West", nil),
+          NSLocalizedString(@"Dragon Ruins - House at 5`o clock", nil), NSLocalizedString(@"Outside Barri Dungeon", nil),
+          NSLocalizedString(@"Dunbarton School Stairway", nil), NSLocalizedString(@"Dugald Aisle Logging Camp Hut", nil),
+          NSLocalizedString(@"Outside Tir Chonaill Inn", nil), NSLocalizedString(@"Dugald Aisle Logging Camp Hut", nil),
+          NSLocalizedString(@"Dunbarton East Potato Field", nil), NSLocalizedString(@"Dragon Ruins - House at 5`o clock", nil),
+          nil];
 }
 
 

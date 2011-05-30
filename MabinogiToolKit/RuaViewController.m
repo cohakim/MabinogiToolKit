@@ -92,7 +92,7 @@
   [titleLabel setBackgroundColor:[UIColor colorWithHue:0.00 saturation:0.00 brightness:0.00 alpha:0.00]];
   [titleLabel setFont:[UIFont boldSystemFontOfSize:13]];
 	[titleLabel setTextColor:[UIColor whiteColor]];
-	[titleLabel setText:@"ルア"];
+	[titleLabel setText:NSLocalizedString(@"Rua", nil)];
 	[sectionView addSubview:titleLabel];
 	return sectionView;
 }
@@ -121,7 +121,7 @@
   [formatter setDateFormat:@"HH:mm"];
 
   if (indexPath.row == 0) {
-    [cell.textLabel setText:@"出勤時間"];
+    [cell.textLabel setText:NSLocalizedString(@"Rua is at the pub", nil)];
   }
 
   if (indexPath.row == 0 && [Rua isRuaAttendance]) {

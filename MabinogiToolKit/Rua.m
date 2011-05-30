@@ -46,7 +46,7 @@ const NSInteger kAttendanceGap = 10;
 }
 
 + (NSInteger)currentCycleCount {
-  long long int elapsedTime = [[NSDate date] timeIntervalSince1970] * 40;
+  long long int elapsedTime = ([[NSDate date] timeIntervalSince1970] + (60*27)) * 40;
   return elapsedTime / (60*60*24);
 }
 
