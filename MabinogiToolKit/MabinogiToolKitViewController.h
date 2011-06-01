@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ErinnTimeViewController.h"
-#import "WeekEffectViewController.h"
+#import "DailyEffectsViewController.h"
 #import "MoonGateViewController.h"
 #import "PriceViewController.h"
 #import "RuaViewController.h"

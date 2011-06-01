@@ -14,7 +14,7 @@
 
 - (NSDictionary *)locations {
   return [NSDictionary dictionaryWithObjectsAndKeys:
-          [NSURL URLWithString:@"http://twitter.com/#!/cohakim"], @"cohakim",
+          [NSURL URLWithString:@"http://twitter.com/#!/cohakims_work"], @"cohakim",
           [NSURL URLWithString:@"http://0333.blog21.fc2.com/"], @"mabinya",
           [NSURL URLWithString:@"http://www.mabinogi.jp/"], @"nexon",
           nil];

@@ -52,8 +52,8 @@
   [staticView addSubview:erinnTimeViewController.view];
   
   // initialize scroll view
-  WeekEffectViewController *weekEffectViewController = 
-    [[[WeekEffectViewController alloc] initWithNibName:@"WeekEffectView" bundle:nil] autorelease];
+  DailyEffectsViewController *weekEffectViewController = 
+    [[[DailyEffectsViewController alloc] initWithNibName:@"WeekEffectView" bundle:nil] autorelease];
   MoonGateViewController *moonGateViewController = 
     [[[MoonGateViewController alloc] initWithNibName:@"MoonGateView" bundle:nil] autorelease];
   PriceViewController *priceViewController = 
