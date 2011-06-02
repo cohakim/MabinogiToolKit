@@ -38,8 +38,8 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 }
 
 - (void)refreshDailyEffect {
-  self.effectExplanations = [WeekEffect effectsFor:[ErinnTime currentErinnWeek]];
-  self.itemExplanations = [WeekEffect itemsFor:[ErinnTime currentErinnWeek]];
+  self.effectExplanations = [DailyEffect effectsFor:[ErinnTime currentErinnWeek]];
+  self.itemExplanations = [DailyEffect itemsFor:[ErinnTime currentErinnWeek]];
   if (([missionExplanations count] == 0) || ((long long int)[[NSDate date] timeIntervalSince1970] % (60*5) == 0)) {
     [self loadMission];
   }

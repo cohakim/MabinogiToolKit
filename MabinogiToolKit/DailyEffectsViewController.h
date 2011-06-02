@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
 #import "ErinnTime.h"
-#import "WeekEffect.h"
+#import "DailyEffect.h"
 #import "TodaysMission.h"
 
 @interface DailyEffectsViewController : UIViewController <UITableViewDelegate, RKObjectLoaderDelegate> {

@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "ErinnTime.h"
 
-@interface WeekEffect : NSObject {
+@interface DailyEffect : NSObject {
 }
 + (NSArray*)effectsFor:(ErinnWeek)week;
 + (NSArray*)itemsFor:(ErinnWeek)week;

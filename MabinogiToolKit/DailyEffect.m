@@ -1,7 +1,7 @@
 
-#import "WeekEffect.h"
+#import "DailyEffect.h"
 
-@interface WeekEffect ()
+@interface DailyEffect ()
 + (NSArray*)effectsImbolic;
 + (NSArray*)effectsAlbanEiler;
 + (NSArray*)effectsBeltane;
@@ -18,7 +18,7 @@
 + (NSArray*)itemsSamhain;
 @end
 
-@implementation WeekEffect
+@implementation DailyEffect
 
 #pragma mark -
 #pragma mark Public Methods

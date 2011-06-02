@@ -14,7 +14,7 @@
 		6C14F1151380CDD900C98ECC /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14F1141380CDD900C98ECC /* Price.m */; };
 		6C14F1191380CF6300C98ECC /* MoonGate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C14F1181380CF6300C98ECC /* MoonGate.m */; };
 		6C5C35C413790B8F0056E0D0 /* ErinnTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C35C213790B8F0056E0D0 /* ErinnTimeViewController.m */; };
-		6C5C35CC13791EBA0056E0D0 /* WeekEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C35CB13791EBA0056E0D0 /* WeekEffect.m */; };
+		6C5C35CC13791EBA0056E0D0 /* DailyEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C35CB13791EBA0056E0D0 /* DailyEffect.m */; };
 		6C5C35CF137930C10056E0D0 /* ErinnTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C35CE137930C10056E0D0 /* ErinnTime.m */; };
 		6C7D59B4138257F80031C6E8 /* PriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7D59B2138257F80031C6E8 /* PriceViewController.m */; };
 		6CA609BA1378E33C0096AEC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA609B91378E33C0096AEC7 /* UIKit.framework */; };
@@ -45,7 +45,7 @@
 		6CCF40F3138508BE003973EB /* ErinnTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40EA138508BE003973EB /* ErinnTimeView.xib */; };
 		6CCF40F4138508BE003973EB /* MoonGateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40EC138508BE003973EB /* MoonGateView.xib */; };
 		6CCF40F5138508BE003973EB /* PriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40EE138508BE003973EB /* PriceView.xib */; };
-		6CCF40F6138508BE003973EB /* WeekEffectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40F0138508BE003973EB /* WeekEffectView.xib */; };
+		6CCF40F6138508BE003973EB /* DailyEffectsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40F0138508BE003973EB /* DailyEffectsView.xib */; };
 		6CCF410113850DF2003973EB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF40FF13850DF2003973EB /* Icon.png */; };
 		6CCF410213850DF2003973EB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF410013850DF2003973EB /* Icon@2x.png */; };
 		6CE3EA7E1389FB99005E63A8 /* Rua.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3EA7D1389FB99005E63A8 /* Rua.m */; };
@@ -145,7 +145,7 @@
 		6C14F1181380CF6300C98ECC /* MoonGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoonGate.m; sourceTree = "<group>"; };
 		6C564FFA1393A1EC0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/MoonGateView.xib; sourceTree = "<absolute>"; };
 		6C564FFB1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/MabinogiToolKitView.xib; sourceTree = "<absolute>"; };
-		6C564FFC1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/WeekEffectView.xib; sourceTree = "<absolute>"; };
+		6C564FFC1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/DailyEffectsView.xib; sourceTree = "<absolute>"; };
 		6C564FFD1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/MainWindow.xib; sourceTree = "<absolute>"; };
 		6C564FFE1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/ErinnTimeView.xib; sourceTree = "<absolute>"; };
 		6C564FFF1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/PriceView.xib; sourceTree = "<absolute>"; };
@@ -154,8 +154,8 @@
 		6C5650021393A1ED0062D639 /* ja */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
 		6C5C35C113790B8E0056E0D0 /* ErinnTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErinnTimeViewController.h; sourceTree = "<group>"; };
 		6C5C35C213790B8F0056E0D0 /* ErinnTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErinnTimeViewController.m; sourceTree = "<group>"; };
-		6C5C35CA13791EBA0056E0D0 /* WeekEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekEffect.h; sourceTree = "<group>"; };
-		6C5C35CB13791EBA0056E0D0 /* WeekEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekEffect.m; sourceTree = "<group>"; };
+		6C5C35CA13791EBA0056E0D0 /* DailyEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DailyEffect.h; sourceTree = "<group>"; };
+		6C5C35CB13791EBA0056E0D0 /* DailyEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyEffect.m; sourceTree = "<group>"; };
 		6C5C35CD137930C10056E0D0 /* ErinnTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErinnTime.h; sourceTree = "<group>"; };
 		6C5C35CE137930C10056E0D0 /* ErinnTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErinnTime.m; sourceTree = "<group>"; };
 		6C7D59B1138257F80031C6E8 /* PriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceViewController.h; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		6CCF40EB138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ErinnTimeView.xib; sourceTree = "<group>"; };
 		6CCF40ED138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MoonGateView.xib; sourceTree = "<group>"; };
 		6CCF40EF138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PriceView.xib; sourceTree = "<group>"; };
-		6CCF40F1138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WeekEffectView.xib; sourceTree = "<group>"; };
+		6CCF40F1138508BE003973EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DailyEffectsView.xib; sourceTree = "<group>"; };
 		6CCF40FF13850DF2003973EB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		6CCF410013850DF2003973EB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
 		6CE3EA7C1389FB99005E63A8 /* Rua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rua.h; sourceTree = "<group>"; };
@@ -333,8 +333,8 @@
 			children = (
 				6C5C35CD137930C10056E0D0 /* ErinnTime.h */,
 				6C5C35CE137930C10056E0D0 /* ErinnTime.m */,
-				6C5C35CA13791EBA0056E0D0 /* WeekEffect.h */,
-				6C5C35CB13791EBA0056E0D0 /* WeekEffect.m */,
+				6C5C35CA13791EBA0056E0D0 /* DailyEffect.h */,
+				6C5C35CB13791EBA0056E0D0 /* DailyEffect.m */,
 				6C14F1171380CF6300C98ECC /* MoonGate.h */,
 				6C14F1181380CF6300C98ECC /* MoonGate.m */,
 				6C14F1131380CDD900C98ECC /* Price.h */,
@@ -353,7 +353,7 @@
 				6CA609CB1378E33C0096AEC7 /* MainWindow.xib */,
 				6CA609D11378E33C0096AEC7 /* MabinogiToolKitView.xib */,
 				6CCF40EA138508BE003973EB /* ErinnTimeView.xib */,
-				6CCF40F0138508BE003973EB /* WeekEffectView.xib */,
+				6CCF40F0138508BE003973EB /* DailyEffectsView.xib */,
 				6CCF40EC138508BE003973EB /* MoonGateView.xib */,
 				6CCF40EE138508BE003973EB /* PriceView.xib */,
 				6CE3EA84138A0149005E63A8 /* RuaView.xib */,
@@ -517,7 +517,7 @@
 				6CCF40F3138508BE003973EB /* ErinnTimeView.xib in Resources */,
 				6CCF40F4138508BE003973EB /* MoonGateView.xib in Resources */,
 				6CCF40F5138508BE003973EB /* PriceView.xib in Resources */,
-				6CCF40F6138508BE003973EB /* WeekEffectView.xib in Resources */,
+				6CCF40F6138508BE003973EB /* DailyEffectsView.xib in Resources */,
 				6CCF410113850DF2003973EB /* Icon.png in Resources */,
 				6CCF410213850DF2003973EB /* Icon@2x.png in Resources */,
 				6CE3EA86138A0149005E63A8 /* RuaView.xib in Resources */,
@@ -540,7 +540,7 @@
 				6CA609EF1378EF0E0096AEC7 /* DailyEffectsViewController.m in Sources */,
 				6CA609F41378EFFB0096AEC7 /* MoonGateViewController.m in Sources */,
 				6C5C35C413790B8F0056E0D0 /* ErinnTimeViewController.m in Sources */,
-				6C5C35CC13791EBA0056E0D0 /* WeekEffect.m in Sources */,
+				6C5C35CC13791EBA0056E0D0 /* DailyEffect.m in Sources */,
 				6C5C35CF137930C10056E0D0 /* ErinnTime.m in Sources */,
 				6C14F1151380CDD900C98ECC /* Price.m in Sources */,
 				6C14F1191380CF6300C98ECC /* MoonGate.m in Sources */,
@@ -634,13 +634,13 @@
 			name = PriceView.xib;
 			sourceTree = "<group>";
 		};
-		6CCF40F0138508BE003973EB /* WeekEffectView.xib */ = {
+		6CCF40F0138508BE003973EB /* DailyEffectsView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6CCF40F1138508BE003973EB /* en */,
 				6C564FFC1393A1ED0062D639 /* ja */,
 			);
-			name = WeekEffectView.xib;
+			name = DailyEffectsView.xib;
 			sourceTree = "<group>";
 		};
 		6CE3EA84138A0149005E63A8 /* RuaView.xib */ = {

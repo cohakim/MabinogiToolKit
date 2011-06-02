@@ -52,8 +52,8 @@
   [staticView addSubview:erinnTimeViewController.view];
   
   // initialize scroll view
-  DailyEffectsViewController *weekEffectViewController = 
-    [[[DailyEffectsViewController alloc] initWithNibName:@"WeekEffectView" bundle:nil] autorelease];
+  DailyEffectsViewController *dailyEffectsViewController = 
+    [[[DailyEffectsViewController alloc] initWithNibName:@"DailyEffectsView" bundle:nil] autorelease];
   MoonGateViewController *moonGateViewController = 
     [[[MoonGateViewController alloc] initWithNibName:@"MoonGateView" bundle:nil] autorelease];
   PriceViewController *priceViewController = 
@@ -63,8 +63,8 @@
   CreditViewController *creditViewController = 
     [[[CreditViewController alloc] initWithNibName:@"CreditView" bundle:nil] autorelease];
   
-  [weekEffectViewController.view setFrame:[self rectForPage:0]];
-  [scrollView addSubview:weekEffectViewController.view];
+  [dailyEffectsViewController.view setFrame:[self rectForPage:0]];
+  [scrollView addSubview:dailyEffectsViewController.view];
   [moonGateViewController.view setFrame:[self rectForPage:1]];
   [scrollView addSubview:moonGateViewController.view];
   [priceViewController.view setFrame:[self rectForPage:2]];
