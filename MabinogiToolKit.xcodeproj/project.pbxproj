@@ -154,7 +154,7 @@
 		6C5650021393A1ED0062D639 /* ja */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
 		6C5C35C113790B8E0056E0D0 /* ErinnTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErinnTimeViewController.h; sourceTree = "<group>"; };
 		6C5C35C213790B8F0056E0D0 /* ErinnTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErinnTimeViewController.m; sourceTree = "<group>"; };
-		6C5C35CA13791EBA0056E0D0 /* DailyEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DailyEffect.h; sourceTree = "<group>"; };
+		6C5C35CA13791EBA0056E0D0 /* DailyEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyEffect.h; sourceTree = "<group>"; };
 		6C5C35CB13791EBA0056E0D0 /* DailyEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyEffect.m; sourceTree = "<group>"; };
 		6C5C35CD137930C10056E0D0 /* ErinnTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErinnTime.h; sourceTree = "<group>"; };
 		6C5C35CE137930C10056E0D0 /* ErinnTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErinnTime.m; sourceTree = "<group>"; };
