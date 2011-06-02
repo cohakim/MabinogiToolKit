@@ -50,7 +50,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
   NSString *buffer = [NSString stringWithString:text];
   buffer = [buffer stringByReplacingOccurrencesOfString:@"本日のミッションは、" withString:@""];
   buffer = [buffer stringByReplacingOccurrencesOfString:@" です♪ http://weather.erinn.biz/today.php #mabinogi" withString:@""];
-  buffer = [buffer stringByReplacingOccurrencesOfString:@"、" withString:@"\n"];
+  buffer = [buffer stringByReplacingOccurrencesOfString:@"、" withString:@"\n\n"];
   return buffer;
 }
 
