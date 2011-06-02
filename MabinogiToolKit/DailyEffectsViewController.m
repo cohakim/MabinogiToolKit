@@ -7,7 +7,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 @interface DailyEffectsViewController ()
 - (void)initObjectManager;
 - (void)loadMission;
-- (void)refreshWeekEffect;
+- (void)refreshDailyEffect;
 - (NSString *)stripDecoratedCharacters:(NSString *)text;
 @end
 
@@ -17,7 +17,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 @synthesize timer;
 @synthesize effectExplanations;
 @synthesize itemExplanations;
-@synthesize missionExplanation;
+@synthesize missionExplanations;
 
 #pragma mark -
 #pragma mark Private Methods
@@ -37,9 +37,12 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
   [loader send];
 }
 
-- (void)refreshWeekEffect {
+- (void)refreshDailyEffect {
   self.effectExplanations = [WeekEffect effectsFor:[ErinnTime currentErinnWeek]];
   self.itemExplanations = [WeekEffect itemsFor:[ErinnTime currentErinnWeek]];
+  if (([missionExplanations count] == 0) || ((long long int)[[NSDate date] timeIntervalSince1970] % (60*5) == 0)) {
+    [self loadMission];
+  }
   [effectView reloadData];
 }
 
@@ -60,7 +63,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
     [self initObjectManager];
     self.effectExplanations = [[NSArray alloc] init];
     self.itemExplanations = [[NSArray alloc] init];
-    self.missionExplanation = @"";
+    self.missionExplanations = [[NSArray alloc] init];
   }
   return self;
 }
@@ -73,7 +76,6 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
                                               userInfo:nil
                                                repeats:YES];
   [timer fire];
-  [self loadMission];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,7 +91,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
   self.timer = nil;
   self.effectExplanations = nil;
   self.itemExplanations = nil;
-  self.missionExplanation = nil;
+  self.missionExplanations = nil;
   [super dealloc];
 }
 
@@ -97,7 +99,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 #pragma mark Timer Event Handlers
 
 - (void)fireTimerEvent {
-  [self refreshWeekEffect];
+  [self refreshDailyEffect];
 }
 
 #pragma mark -
@@ -108,11 +110,16 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {
   TodaysMission *mission = [objects objectAtIndex:0];
-  self.missionExplanation = [mission missionExpired] ? NSLocalizedString(@"cannot obtain a Today's Mission.", nil) 
-                                                     : [self stripDecoratedCharacters:mission.text];
+  if ([mission missionExpired]) {
+    self.missionExplanations = [NSArray arrayWithObject:NSLocalizedString(@"cannot obtain a Today's Mission.", nil)];
+  }
+  else {
+    self.missionExplanations = [[self stripDecoratedCharacters:mission.text] componentsSeparatedByString:@"\n"];
+  }
 }
 
 - (void)objectLoader:(RKObjectLoader*)objectLoader didFailWithError:(NSError*)error {
+  self.missionExplanations = [NSArray arrayWithObject:NSLocalizedString(@"cannot obtain a Today's Mission.", nil)];
 }
 
 #pragma mark -
@@ -135,7 +142,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
       number = [itemExplanations count];
       break;
     case 2:
-      number = 1;
+      number = [missionExplanations count];
       break;
   }
   return number;
@@ -176,7 +183,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
       text = [itemExplanations objectAtIndex:indexPath.row];
       break;
     case 2:
-      text = missionExplanation;
+      text = [missionExplanations objectAtIndex:indexPath.row];
       break;
   }
   CGSize ts1 = [text sizeWithFont:[UIFont systemFontOfSize:13]
@@ -204,7 +211,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
       [cell.textLabel setText:[itemExplanations objectAtIndex:indexPath.row]];
       break;
     case 2:
-      [cell.textLabel setText:missionExplanation];
+      [cell.textLabel setText:[missionExplanations objectAtIndex:indexPath.row]];
       break;
   }
 

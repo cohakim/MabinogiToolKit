@@ -11,11 +11,11 @@
   NSTimer *timer;
   NSArray *effectExplanations;
   NSArray *itemExplanations;
-  NSString *missionExplanation;
+  NSArray *missionExplanations;
 }
 @property (nonatomic, retain) UITableView *effectView;
 @property (nonatomic, assign) NSTimer *timer;
 @property (nonatomic, copy) NSArray *effectExplanations;
 @property (nonatomic, copy) NSArray *itemExplanations;
-@property (nonatomic, copy) NSString *missionExplanation;
+@property (nonatomic, copy) NSArray *missionExplanations;
 @end
