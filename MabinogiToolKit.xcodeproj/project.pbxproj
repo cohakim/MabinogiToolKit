@@ -143,18 +143,10 @@
 		6C14F1141380CDD900C98ECC /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		6C14F1171380CF6300C98ECC /* MoonGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoonGate.h; sourceTree = "<group>"; };
 		6C14F1181380CF6300C98ECC /* MoonGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoonGate.m; sourceTree = "<group>"; };
-		6C564FFA1393A1EC0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/MoonGateView.xib; sourceTree = "<absolute>"; };
-		6C564FFB1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/MabinogiToolKitView.xib; sourceTree = "<absolute>"; };
-		6C564FFC1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/DailyEffectsView.xib; sourceTree = "<absolute>"; };
-		6C564FFD1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/MainWindow.xib; sourceTree = "<absolute>"; };
-		6C564FFE1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/ErinnTimeView.xib; sourceTree = "<absolute>"; };
-		6C564FFF1393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/PriceView.xib; sourceTree = "<absolute>"; };
-		6C5650001393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/RuaView.xib; sourceTree = "<absolute>"; };
-		6C5650011393A1ED0062D639 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/CreditView.xib; sourceTree = "<absolute>"; };
 		6C5650021393A1ED0062D639 /* ja */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = ja; path = /Users/cohakim/Public/Dropbox/projects/ObjC/MabinogiToolKit/MabinogiToolKit/ja.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
 		6C5C35C113790B8E0056E0D0 /* ErinnTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErinnTimeViewController.h; sourceTree = "<group>"; };
 		6C5C35C213790B8F0056E0D0 /* ErinnTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErinnTimeViewController.m; sourceTree = "<group>"; };
-		6C5C35CA13791EBA0056E0D0 /* DailyEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DailyEffect.h; sourceTree = "<group>"; };
+		6C5C35CA13791EBA0056E0D0 /* DailyEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyEffect.h; sourceTree = "<group>"; };
 		6C5C35CB13791EBA0056E0D0 /* DailyEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyEffect.m; sourceTree = "<group>"; };
 		6C5C35CD137930C10056E0D0 /* ErinnTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErinnTime.h; sourceTree = "<group>"; };
 		6C5C35CE137930C10056E0D0 /* ErinnTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErinnTime.m; sourceTree = "<group>"; };
@@ -584,7 +576,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CA609CC1378E33C0096AEC7 /* en */,
-				6C564FFD1393A1ED0062D639 /* ja */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
@@ -593,7 +584,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CA609D21378E33C0096AEC7 /* en */,
-				6C564FFB1393A1ED0062D639 /* ja */,
 			);
 			name = MabinogiToolKitView.xib;
 			sourceTree = "<group>";
@@ -602,7 +592,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CCF40E9138508BE003973EB /* en */,
-				6C5650011393A1ED0062D639 /* ja */,
 			);
 			name = CreditView.xib;
 			sourceTree = "<group>";
@@ -611,7 +600,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CCF40EB138508BE003973EB /* en */,
-				6C564FFE1393A1ED0062D639 /* ja */,
 			);
 			name = ErinnTimeView.xib;
 			sourceTree = "<group>";
@@ -620,7 +608,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CCF40ED138508BE003973EB /* en */,
-				6C564FFA1393A1EC0062D639 /* ja */,
 			);
 			name = MoonGateView.xib;
 			sourceTree = "<group>";
@@ -629,7 +616,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CCF40EF138508BE003973EB /* en */,
-				6C564FFF1393A1ED0062D639 /* ja */,
 			);
 			name = PriceView.xib;
 			sourceTree = "<group>";
@@ -638,7 +624,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CCF40F1138508BE003973EB /* en */,
-				6C564FFC1393A1ED0062D639 /* ja */,
 			);
 			name = DailyEffectsView.xib;
 			sourceTree = "<group>";
@@ -647,7 +632,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CE3EA85138A0149005E63A8 /* en */,
-				6C5650001393A1ED0062D639 /* ja */,
 			);
 			name = RuaView.xib;
 			sourceTree = "<group>";
