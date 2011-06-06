@@ -52,27 +52,18 @@
   [staticView addSubview:erinnTimeViewController.view];
   
   // initialize scroll view
-  DailyEffectsViewController *dailyEffectsViewController = 
-    [[[DailyEffectsViewController alloc] initWithNibName:@"DailyEffectsView" bundle:nil] autorelease];
-  MoonGateViewController *moonGateViewController = 
-    [[[MoonGateViewController alloc] initWithNibName:@"MoonGateView" bundle:nil] autorelease];
-  PriceViewController *priceViewController = 
-    [[[PriceViewController alloc] initWithNibName:@"PriceView" bundle:nil] autorelease];
-  RuaViewController *ruaViewController = 
-    [[[RuaViewController alloc] initWithNibName:@"RuaView" bundle:nil] autorelease];
-  CreditViewController *creditViewController = 
-    [[[CreditViewController alloc] initWithNibName:@"CreditView" bundle:nil] autorelease];
-  
-  [dailyEffectsViewController.view setFrame:[self rectForPage:0]];
-  [scrollView addSubview:dailyEffectsViewController.view];
-  [moonGateViewController.view setFrame:[self rectForPage:1]];
-  [scrollView addSubview:moonGateViewController.view];
-  [priceViewController.view setFrame:[self rectForPage:2]];
-  [scrollView addSubview:priceViewController.view];
-  [ruaViewController.view setFrame:[self rectForPage:3]];
-  [scrollView addSubview:ruaViewController.view];
-  [creditViewController.view setFrame:[self rectForPage:4]];
-  [scrollView addSubview:creditViewController.view];
+  NSArray *pageSymbols = [[[NSArray alloc] initWithObjects:
+                          @"DailyEffectsView", @"MoonGateView", @"PriceView", 
+                          @"RuaView", @"CreditView", 
+                          nil] autorelease];
+  for (int i = 0; i < [pageSymbols count]; i++) {
+    NSString *viewSymbol = [pageSymbols objectAtIndex:i];
+    NSString *viewControllerClassSymbol = [NSString stringWithFormat:@"%@Controller", viewSymbol];
+    id viewControllerClass = objc_getClass([viewControllerClassSymbol UTF8String]);
+    UIViewController *viewController = [[[viewControllerClass alloc] initWithNibName:viewSymbol bundle:nil] autorelease];
+    [viewController.view setFrame:[self rectForPage:i]];
+    [scrollView addSubview:viewController.view];
+  }
   
   scrollView.contentSize = CGSizeMake(self.baseWidth * self.pageSize, self.baseHeight);
 }
