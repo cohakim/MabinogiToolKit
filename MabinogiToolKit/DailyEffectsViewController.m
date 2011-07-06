@@ -6,6 +6,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 
 @interface DailyEffectsViewController ()
 - (void)initObjectManager;
+- (void)initEventManager;
 - (void)loadMission;
 - (void)refreshDailyEffect;
 - (NSString *)stripDecoratedCharacters:(NSString *)text;
@@ -26,6 +27,11 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
   [RKRequestQueue sharedQueue].showsNetworkActivityIndicatorWhenBusy = YES;
   RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:kBaseURL];
   [objectManager setFormat:RKMappingFormatJSON];
+}
+
+- (void)initEventManager {
+  NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+  [nc addObserver:self selector:@selector(loadMission) name:@"UIApplicationDidBecomeActiveNotification" object:nil];
 }
 
 - (void)loadMission {
@@ -61,6 +67,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
   self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
   if (self) {
     [self initObjectManager];
+    [self initEventManager];
     self.effectExplanations = [[NSArray alloc] init];
     self.itemExplanations = [[NSArray alloc] init];
     self.missionExplanations = [[NSArray alloc] init];
@@ -76,6 +83,10 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
                                               userInfo:nil
                                                repeats:YES];
   [timer fire];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  NSLog(@"aaaa");
 }
 
 - (void)didReceiveMemoryWarning {

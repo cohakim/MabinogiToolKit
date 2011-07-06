@@ -70,7 +70,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">MabinogiTookKit Version 1.2.0</string>
+						<string key="IBUIText">MabinogiTookKit Version 1.2.1</string>
 						<object class="NSFont" key="IBUIFont" id="275900486">
 							<string key="NSName">Helvetica</string>
 							<double key="NSSize">13</double>

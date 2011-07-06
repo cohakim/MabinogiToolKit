@@ -2,7 +2,6 @@
 #import "ErinnTimeViewController.h"
 
 @interface ErinnTimeViewController ()
-- (void)rotateMarkImage;
 - (void)refreshTimeLabel;
 - (void)refreshWeekLabel;
 @end
@@ -18,34 +17,6 @@
 
 #pragma mark -
 #pragma mark Private Methods
-
-- (void)rotateMarkImage {
-  CGContextRef context = UIGraphicsGetCurrentContext();
-
-  [UIView beginAnimations:nil context:context];
-  [UIView setAnimationDuration:1];
-  [UIView setAnimationDelegate:self];
-  
-  CGAffineTransform rotate = CGAffineTransformMakeRotation(0);
-  switch ((long long int)[[NSDate date] timeIntervalSince1970] % 4) {
-    case 0:
-      rotate = CGAffineTransformMakeRotation(M_PI * 90.0f/180.0f);
-      break;
-    case 1:
-      rotate = CGAffineTransformMakeRotation(M_PI * 180.0f/180.0f);
-      break;
-    case 2:
-      rotate = CGAffineTransformMakeRotation(M_PI * 270.0f/180.0f);
-      break;
-    case 3:
-      rotate = CGAffineTransformMakeRotation(M_PI * 360.0f/180.0f);
-      markImage.transform = CGAffineTransformMakeRotation(0);		
-      break;
-  }
-  [markImage setTransform:rotate];
-  
-  [UIView commitAnimations];	
-}
    
 - (void)refreshTimeLabel {
   self.currentErinnTime = [ErinnTime currentErinnTime];
@@ -97,7 +68,6 @@
 #pragma mark Timer Event Handlers
 
 - (void)fireTimerEvent {
-//  [self rotateMarkImage];
   [self refreshTimeLabel];
   [self refreshWeekLabel];
 }
