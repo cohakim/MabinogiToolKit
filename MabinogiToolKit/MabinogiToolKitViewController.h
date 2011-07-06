@@ -1,5 +1,6 @@
 
 #import <UIKit/UIKit.h>
+#import <objc/runtime.h>
 #import "ErinnTimeViewController.h"
 #import "DailyEffectsViewController.h"
 #import "MoonGateViewController.h"
