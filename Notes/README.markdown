@@ -1,45 +1,40 @@
-===========================================================
-
 Mabinogi Tool Kit
+=================
 
-===========================================================
-updated: 2011-05-20
 
 # 概要
 
-MMO RPG マビノギ の様々な情報を表示するユーティリティアプリケーションです！
-本日の曜日効果、アドバンスドプレイアイテム、ムーンゲート周期表、プライスの行方… など
+MMO RPG マビノギ の様々なゲーム内情報を表示するユーティリティアプリケーションです！
+
+<img alt="" src="http://blog.yabasoft.biz/wp-content/uploads/2011/05/cap001.jpg" title="MabinogiToolKit1" class="alignnone" width="180" height="270" /> <img alt="" src="http://blog.yabasoft.biz/wp-content/uploads/2011/05/cap002.jpg" title="MabinogiToolKit2" class="alignnone" width="180" height="270" /> <img alt="" src="http://blog.yabasoft.biz/wp-content/uploads/2011/05/cap003.jpg" title="MabinogiToolKit3" class="alignnone" width="180" height="270" />
 
 # システム要件
 
-iOS 4.0以降を搭載したiPhone端末
+- iPhone3G 以上
+- iOS 4.0 以上
 
-# 機能概要
+# 機能一覧
 
 - エリン時計
 - 本日の曜日効果
-- 本日のアドバンスドプレイアイテム
-- ムーンゲートのタイムテーブル
-- プライスいまどこ？
-- ルア出勤表
+- アドバンスドプレイアイテム
+- 今日のミッション
+- ムーンゲート周期表
+- プライスの行方
+- ルアの出勤表
 
 # 関連リンク
 
-- Project Page: http://cohakim.wordpress.com/projects/mabinogitoolkit-for-iphone/
-- Repository: https://github.com/cohakim/MabinogiToolKit
-- App Store: Waiting for Review
+- [Project Page](http://blog.yabasoft.biz/projects/mabinogitoolkit)
+- [App Store](http://itunes.apple.com/app/mabinogitoolkit/id438883602?mt=8)
+- [おきゃくさまそうだんしつ on Twitter](http://twitter.com/#!/cohakims_work)
+- [おきゃくさまそうだんしつ on Mixi](http://mixi.jp/view_community.pl?id=5652918)
+- [ブログエントリ](http://blog.yabasoft.biz/archives/tag/mabinogi)
+- [GitHub Repository](https://github.com/cohakim/MabinogiToolKit)
 
 # 画像素材
 
 アイコンおよび背景画像の著作権は各版権元に帰属しています。
 
-[まびにゃ。](http://0333.blog21.fc2.com/)
-[Nexon](http://www.nexon.co.jp/)
-
-# ライセンス
-
-MIT License に準拠します。（プログラム部分のみ）
-
-===========================================================
-@cohakim [Twitter](http://twitter.com/#!/cohakim)
-cohakim@gmail.com
+- [まびにゃ。](http://0333.blog21.fc2.com/)
+- [Nexon](http://www.nexon.co.jp/)
