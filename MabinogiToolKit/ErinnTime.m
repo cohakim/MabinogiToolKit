@@ -27,7 +27,8 @@
   [formatter setDateFormat:@"mm"];
   NSString *mm = [formatter stringFromDate:currentErinnTime];
   
-  return [NSString stringWithFormat:@"%@:%@%@", hh, [mm substringToIndex:1], @"0"];
+//  return [NSString stringWithFormat:@"%@:%@%@", hh, [mm substringToIndex:1], @"0"];
+  return [NSString stringWithFormat:@"%@:%@", hh, mm];
 }
 
 + (NSString*)symbolForErinnWeek:(ErinnWeek)week {

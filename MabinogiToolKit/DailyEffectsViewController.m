@@ -55,7 +55,7 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 - (NSString *)stripDecoratedCharacters:(NSString *)text {
   NSString *buffer = [NSString stringWithString:text];
   buffer = [buffer stringByReplacingOccurrencesOfString:@"本日のミッションは、" withString:@""];
-  buffer = [buffer stringByReplacingOccurrencesOfString:@" です♪ http://weather.erinn.biz/today.php #mabinogi" withString:@""];
+  buffer = [buffer stringByReplacingOccurrencesOfString:@" です♪ http://t.co/Tf0YI0ts #mabinogi" withString:@""];
   buffer = [buffer stringByReplacingOccurrencesOfString:@"、" withString:@"\n\n"];
   return buffer;
 }

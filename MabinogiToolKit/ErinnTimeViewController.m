@@ -40,7 +40,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+  self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1f
                                                 target:self
                                               selector:@selector(fireTimerEvent)
                                               userInfo:nil
