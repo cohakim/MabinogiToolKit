@@ -68,9 +68,9 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
   if (self) {
     [self initObjectManager];
     [self initEventManager];
-    self.effectExplanations = [[NSArray alloc] init];
-    self.itemExplanations = [[NSArray alloc] init];
-    self.missionExplanations = [[NSArray alloc] init];
+    self.effectExplanations = [NSArray array];
+    self.itemExplanations = [NSArray array];
+    self.missionExplanations = [NSArray array];
   }
   return self;
 }
@@ -86,7 +86,6 @@ static NSString * const kResourceOfTodaysMission = @"1/statuses/user_timeline/ma
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-  NSLog(@"aaaa");
 }
 
 - (void)didReceiveMemoryWarning {
